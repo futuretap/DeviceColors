@@ -63,9 +63,15 @@
 	NSString *modelName = @"";
 	
 	SEL selector = NSSelectorFromString([device.systemVersion hasPrefix:@"7"] ? @"_deviceInfoForKey:" :  @"deviceInfoForKey:");
-	// private API! Do not use in App Store builds!
-	self.deviceColor = [device performSelector:selector withObject:@"DeviceColor"];
-	self.deviceEnclosureColor = [device performSelector:selector withObject:@"DeviceEnclosureColor"];
+	
+	if ([device respondsToSelector:selector]) {
+		// private API! Do not use in App Store builds!
+		self.deviceColor = [device performSelector:selector withObject:@"DeviceColor"];
+		self.deviceEnclosureColor = [device performSelector:selector withObject:@"DeviceEnclosureColor"];
+	} else {
+		[[[UIAlertView alloc] initWithTitle:@"selector not found" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+		return;
+	}
 	NSString *color = self.deviceEnclosureColor && ![self.deviceEnclosureColor isEqualToString:@"unknown"] ? self.deviceEnclosureColor : self.deviceColor;
 	color = [color stringByReplacingOccurrencesOfString:@"#" withString:@""];
 	
