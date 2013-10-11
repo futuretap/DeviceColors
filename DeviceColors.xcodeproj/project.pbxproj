@@ -7,34 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0649F118083BCA00FE5486 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0649F018083BCA00FE5486 /* SystemConfiguration.framework */; };
+		AA0649F318083BE500FE5486 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0649F218083BE500FE5486 /* CFNetwork.framework */; };
 		AAF42BFA1807FF420069A423 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF42BF91807FF420069A423 /* Foundation.framework */; };
 		AAF42BFC1807FF420069A423 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF42BFB1807FF420069A423 /* CoreGraphics.framework */; };
 		AAF42BFE1807FF420069A423 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF42BFD1807FF420069A423 /* UIKit.framework */; };
 		AAF42C041807FF420069A423 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAF42C021807FF420069A423 /* InfoPlist.strings */; };
 		AAF42C061807FF420069A423 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF42C051807FF420069A423 /* main.m */; };
 		AAF42C0A1807FF420069A423 /* FTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF42C091807FF420069A423 /* FTAppDelegate.m */; };
-		AAF42C0D1807FF420069A423 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF42C0B1807FF420069A423 /* Main_iPhone.storyboard */; };
-		AAF42C101807FF430069A423 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF42C0E1807FF430069A423 /* Main_iPad.storyboard */; };
+		AAF42C0D1807FF420069A423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF42C0B1807FF420069A423 /* Main.storyboard */; };
 		AAF42C131807FF430069A423 /* FTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF42C121807FF430069A423 /* FTViewController.m */; };
 		AAF42C151807FF430069A423 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF42C141807FF430069A423 /* Images.xcassets */; };
-		AAF42C1C1807FF440069A423 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF42C1B1807FF430069A423 /* XCTest.framework */; };
-		AAF42C1D1807FF440069A423 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF42BF91807FF420069A423 /* Foundation.framework */; };
-		AAF42C1E1807FF440069A423 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF42BFD1807FF420069A423 /* UIKit.framework */; };
-		AAF42C261807FF440069A423 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAF42C241807FF440069A423 /* InfoPlist.strings */; };
-		AAF42C281807FF440069A423 /* DeviceColorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF42C271807FF440069A423 /* DeviceColorsTests.m */; };
+		AAF42CE8180812D80069A423 /* com.apple.ipad-2-black.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CC5180812D80069A423 /* com.apple.ipad-2-black.jpg */; };
+		AAF42CE9180812D80069A423 /* com.apple.ipad-2-white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CC6180812D80069A423 /* com.apple.ipad-2-white.jpg */; };
+		AAF42CEA180812D80069A423 /* com.apple.ipad-mini-black-3g.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CC7180812D80069A423 /* com.apple.ipad-mini-black-3g.jpg */; };
+		AAF42CEB180812D80069A423 /* com.apple.ipad-mini-black-wifi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CC8180812D80069A423 /* com.apple.ipad-mini-black-wifi.jpg */; };
+		AAF42CEC180812D80069A423 /* com.apple.ipad-mini-white-3g.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CC9180812D80069A423 /* com.apple.ipad-mini-white-3g.jpg */; };
+		AAF42CED180812D80069A423 /* com.apple.ipad-mini-white-wifi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CCA180812D80069A423 /* com.apple.ipad-mini-white-wifi.jpg */; };
+		AAF42CEE180812D80069A423 /* com.apple.ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CCB180812D80069A423 /* com.apple.ipad.jpg */; };
+		AAF42CEF180812D80069A423 /* com.apple.iphone-3g.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CCC180812D80069A423 /* com.apple.iphone-3g.jpg */; };
+		AAF42CF0180812D80069A423 /* com.apple.iphone-4-black.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CCD180812D80069A423 /* com.apple.iphone-4-black.jpg */; };
+		AAF42CF1180812D80069A423 /* com.apple.iphone-4-cdma-black.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CCE180812D80069A423 /* com.apple.iphone-4-cdma-black.jpg */; };
+		AAF42CF2180812D80069A423 /* com.apple.iphone-4-cdma-white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CCF180812D80069A423 /* com.apple.iphone-4-cdma-white.jpg */; };
+		AAF42CF3180812D80069A423 /* com.apple.iphone-4-white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CD0180812D80069A423 /* com.apple.iphone-4-white.jpg */; };
+		AAF42CF4180812D80069A423 /* com.apple.iphone-5-black.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CD1180812D80069A423 /* com.apple.iphone-5-black.jpg */; };
+		AAF42CF5180812D80069A423 /* com.apple.iphone-5-white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CD2180812D80069A423 /* com.apple.iphone-5-white.jpg */; };
+		AAF42CF6180812D80069A423 /* com.apple.iphone-5c-#46abe0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CD3180812D80069A423 /* com.apple.iphone-5c-#46abe0.jpg */; };
+		AAF42CF7180812D80069A423 /* com.apple.iphone-5c-#a1e877.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CD4180812D80069A423 /* com.apple.iphone-5c-#a1e877.jpg */; };
+		AAF42CF8180812D80069A423 /* com.apple.iphone-5c-#f5f4f7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CD5180812D80069A423 /* com.apple.iphone-5c-#f5f4f7.jpg */; };
+		AAF42CF9180812D80069A423 /* com.apple.iphone-5c-#faf189.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CD6180812D80069A423 /* com.apple.iphone-5c-#faf189.jpg */; };
+		AAF42CFA180812D80069A423 /* com.apple.iphone-5c-#fe767a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CD7180812D80069A423 /* com.apple.iphone-5c-#fe767a.jpg */; };
+		AAF42CFB180812D80069A423 /* com.apple.iphone-5s-#99989b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CD8180812D80069A423 /* com.apple.iphone-5s-#99989b.jpg */; };
+		AAF42CFC180812D80069A423 /* com.apple.iphone-5s-#d4c5b3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CD9180812D80069A423 /* com.apple.iphone-5s-#d4c5b3.jpg */; };
+		AAF42CFD180812D80069A423 /* com.apple.iphone-5s-#d7d9d8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CDA180812D80069A423 /* com.apple.iphone-5s-#d7d9d8.jpg */; };
+		AAF42CFE180812D80069A423 /* com.apple.iphone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CDB180812D80069A423 /* com.apple.iphone.jpg */; };
+		AAF42CFF180812D80069A423 /* com.apple.ipod-touch-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CDC180812D80069A423 /* com.apple.ipod-touch-2.jpg */; };
+		AAF42D00180812D80069A423 /* com.apple.ipod-touch-4-black.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CDD180812D80069A423 /* com.apple.ipod-touch-4-black.jpg */; };
+		AAF42D01180812D80069A423 /* com.apple.ipod-touch-4-white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CDE180812D80069A423 /* com.apple.ipod-touch-4-white.jpg */; };
+		AAF42D02180812D80069A423 /* com.apple.ipod-touch-5-blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CDF180812D80069A423 /* com.apple.ipod-touch-5-blue.jpg */; };
+		AAF42D03180812D80069A423 /* com.apple.ipod-touch-5-pink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CE0180812D80069A423 /* com.apple.ipod-touch-5-pink.jpg */; };
+		AAF42D04180812D80069A423 /* com.apple.ipod-touch-5-red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CE1180812D80069A423 /* com.apple.ipod-touch-5-red.jpg */; };
+		AAF42D05180812D80069A423 /* com.apple.ipod-touch-5-silver.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CE2180812D80069A423 /* com.apple.ipod-touch-5-silver.jpg */; };
+		AAF42D06180812D80069A423 /* com.apple.ipod-touch-5-slate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CE3180812D80069A423 /* com.apple.ipod-touch-5-slate.jpg */; };
+		AAF42D07180812D80069A423 /* com.apple.ipod-touch-5-sparrow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CE4180812D80069A423 /* com.apple.ipod-touch-5-sparrow.jpg */; };
+		AAF42D08180812D80069A423 /* com.apple.ipod-touch-5-white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CE5180812D80069A423 /* com.apple.ipod-touch-5-white.jpg */; };
+		AAF42D09180812D80069A423 /* com.apple.ipod-touch-5-yellow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CE6180812D80069A423 /* com.apple.ipod-touch-5-yellow.jpg */; };
+		AAF42D0A180812D80069A423 /* com.apple.ipod-touch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAF42CE7180812D80069A423 /* com.apple.ipod-touch.jpg */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AAF42C1F1807FF440069A423 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AAF42BEE1807FF420069A423 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AAF42BF51807FF420069A423;
-			remoteInfo = DeviceColors;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		AA0649EE18083BB700FE5486 /* libSystem.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.dylib; path = usr/lib/libSystem.dylib; sourceTree = SDKROOT; };
+		AA0649F018083BCA00FE5486 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AA0649F218083BE500FE5486 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AA38E3791808497700FBB325 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AAE91ECC18081BE3003E8F81 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		AAF42BF61807FF420069A423 /* DeviceColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF42BF91807FF420069A423 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AAF42BFB1807FF420069A423 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,16 +71,46 @@
 		AAF42C071807FF420069A423 /* DeviceColors-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeviceColors-Prefix.pch"; sourceTree = "<group>"; };
 		AAF42C081807FF420069A423 /* FTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTAppDelegate.h; sourceTree = "<group>"; };
 		AAF42C091807FF420069A423 /* FTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTAppDelegate.m; sourceTree = "<group>"; };
-		AAF42C0C1807FF420069A423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		AAF42C0F1807FF430069A423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		AAF42C0C1807FF420069A423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAF42C111807FF430069A423 /* FTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTViewController.h; sourceTree = "<group>"; };
 		AAF42C121807FF430069A423 /* FTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTViewController.m; sourceTree = "<group>"; };
 		AAF42C141807FF430069A423 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AAF42C1A1807FF430069A423 /* DeviceColorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceColorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF42C1B1807FF430069A423 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AAF42C231807FF440069A423 /* DeviceColorsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeviceColorsTests-Info.plist"; sourceTree = "<group>"; };
-		AAF42C251807FF440069A423 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AAF42C271807FF440069A423 /* DeviceColorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceColorsTests.m; sourceTree = "<group>"; };
+		AAF42CC5180812D80069A423 /* com.apple.ipad-2-black.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipad-2-black.jpg"; sourceTree = "<group>"; };
+		AAF42CC6180812D80069A423 /* com.apple.ipad-2-white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipad-2-white.jpg"; sourceTree = "<group>"; };
+		AAF42CC7180812D80069A423 /* com.apple.ipad-mini-black-3g.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipad-mini-black-3g.jpg"; sourceTree = "<group>"; };
+		AAF42CC8180812D80069A423 /* com.apple.ipad-mini-black-wifi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipad-mini-black-wifi.jpg"; sourceTree = "<group>"; };
+		AAF42CC9180812D80069A423 /* com.apple.ipad-mini-white-3g.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipad-mini-white-3g.jpg"; sourceTree = "<group>"; };
+		AAF42CCA180812D80069A423 /* com.apple.ipad-mini-white-wifi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipad-mini-white-wifi.jpg"; sourceTree = "<group>"; };
+		AAF42CCB180812D80069A423 /* com.apple.ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = com.apple.ipad.jpg; sourceTree = "<group>"; };
+		AAF42CCC180812D80069A423 /* com.apple.iphone-3g.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-3g.jpg"; sourceTree = "<group>"; };
+		AAF42CCD180812D80069A423 /* com.apple.iphone-4-black.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-4-black.jpg"; sourceTree = "<group>"; };
+		AAF42CCE180812D80069A423 /* com.apple.iphone-4-cdma-black.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-4-cdma-black.jpg"; sourceTree = "<group>"; };
+		AAF42CCF180812D80069A423 /* com.apple.iphone-4-cdma-white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-4-cdma-white.jpg"; sourceTree = "<group>"; };
+		AAF42CD0180812D80069A423 /* com.apple.iphone-4-white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-4-white.jpg"; sourceTree = "<group>"; };
+		AAF42CD1180812D80069A423 /* com.apple.iphone-5-black.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-5-black.jpg"; sourceTree = "<group>"; };
+		AAF42CD2180812D80069A423 /* com.apple.iphone-5-white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-5-white.jpg"; sourceTree = "<group>"; };
+		AAF42CD3180812D80069A423 /* com.apple.iphone-5c-#46abe0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-5c-#46abe0.jpg"; sourceTree = "<group>"; };
+		AAF42CD4180812D80069A423 /* com.apple.iphone-5c-#a1e877.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-5c-#a1e877.jpg"; sourceTree = "<group>"; };
+		AAF42CD5180812D80069A423 /* com.apple.iphone-5c-#f5f4f7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-5c-#f5f4f7.jpg"; sourceTree = "<group>"; };
+		AAF42CD6180812D80069A423 /* com.apple.iphone-5c-#faf189.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-5c-#faf189.jpg"; sourceTree = "<group>"; };
+		AAF42CD7180812D80069A423 /* com.apple.iphone-5c-#fe767a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-5c-#fe767a.jpg"; sourceTree = "<group>"; };
+		AAF42CD8180812D80069A423 /* com.apple.iphone-5s-#99989b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-5s-#99989b.jpg"; sourceTree = "<group>"; };
+		AAF42CD9180812D80069A423 /* com.apple.iphone-5s-#d4c5b3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-5s-#d4c5b3.jpg"; sourceTree = "<group>"; };
+		AAF42CDA180812D80069A423 /* com.apple.iphone-5s-#d7d9d8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.iphone-5s-#d7d9d8.jpg"; sourceTree = "<group>"; };
+		AAF42CDB180812D80069A423 /* com.apple.iphone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = com.apple.iphone.jpg; sourceTree = "<group>"; };
+		AAF42CDC180812D80069A423 /* com.apple.ipod-touch-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipod-touch-2.jpg"; sourceTree = "<group>"; };
+		AAF42CDD180812D80069A423 /* com.apple.ipod-touch-4-black.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipod-touch-4-black.jpg"; sourceTree = "<group>"; };
+		AAF42CDE180812D80069A423 /* com.apple.ipod-touch-4-white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipod-touch-4-white.jpg"; sourceTree = "<group>"; };
+		AAF42CDF180812D80069A423 /* com.apple.ipod-touch-5-blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipod-touch-5-blue.jpg"; sourceTree = "<group>"; };
+		AAF42CE0180812D80069A423 /* com.apple.ipod-touch-5-pink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipod-touch-5-pink.jpg"; sourceTree = "<group>"; };
+		AAF42CE1180812D80069A423 /* com.apple.ipod-touch-5-red.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipod-touch-5-red.jpg"; sourceTree = "<group>"; };
+		AAF42CE2180812D80069A423 /* com.apple.ipod-touch-5-silver.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipod-touch-5-silver.jpg"; sourceTree = "<group>"; };
+		AAF42CE3180812D80069A423 /* com.apple.ipod-touch-5-slate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipod-touch-5-slate.jpg"; sourceTree = "<group>"; };
+		AAF42CE4180812D80069A423 /* com.apple.ipod-touch-5-sparrow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipod-touch-5-sparrow.jpg"; sourceTree = "<group>"; };
+		AAF42CE5180812D80069A423 /* com.apple.ipod-touch-5-white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipod-touch-5-white.jpg"; sourceTree = "<group>"; };
+		AAF42CE6180812D80069A423 /* com.apple.ipod-touch-5-yellow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipod-touch-5-yellow.jpg"; sourceTree = "<group>"; };
+		AAF42CE7180812D80069A423 /* com.apple.ipod-touch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "com.apple.ipod-touch.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,19 +118,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0649F318083BE500FE5486 /* CFNetwork.framework in Frameworks */,
+				AA0649F118083BCA00FE5486 /* SystemConfiguration.framework in Frameworks */,
 				AAF42BFC1807FF420069A423 /* CoreGraphics.framework in Frameworks */,
 				AAF42BFE1807FF420069A423 /* UIKit.framework in Frameworks */,
 				AAF42BFA1807FF420069A423 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AAF42C171807FF430069A423 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AAF42C1C1807FF440069A423 /* XCTest.framework in Frameworks */,
-				AAF42C1E1807FF440069A423 /* UIKit.framework in Frameworks */,
-				AAF42C1D1807FF440069A423 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +132,11 @@
 		AAF42BED1807FF410069A423 = {
 			isa = PBXGroup;
 			children = (
+				AAF42C341808117A0069A423 /* Resources */,
 				AAF42BFF1807FF420069A423 /* DeviceColors */,
-				AAF42C211807FF440069A423 /* DeviceColorsTests */,
 				AAF42BF81807FF420069A423 /* Frameworks */,
 				AAF42BF71807FF420069A423 /* Products */,
+				AA38E3791808497700FBB325 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				AAF42BF61807FF420069A423 /* DeviceColors.app */,
-				AAF42C1A1807FF430069A423 /* DeviceColorsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +151,10 @@
 		AAF42BF81807FF420069A423 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA0649F218083BE500FE5486 /* CFNetwork.framework */,
+				AA0649F018083BCA00FE5486 /* SystemConfiguration.framework */,
+				AA0649EE18083BB700FE5486 /* libSystem.dylib */,
+				AAE91ECC18081BE3003E8F81 /* MobileCoreServices.framework */,
 				AAF42BF91807FF420069A423 /* Foundation.framework */,
 				AAF42BFB1807FF420069A423 /* CoreGraphics.framework */,
 				AAF42BFD1807FF420069A423 /* UIKit.framework */,
@@ -116,8 +168,7 @@
 			children = (
 				AAF42C081807FF420069A423 /* FTAppDelegate.h */,
 				AAF42C091807FF420069A423 /* FTAppDelegate.m */,
-				AAF42C0B1807FF420069A423 /* Main_iPhone.storyboard */,
-				AAF42C0E1807FF430069A423 /* Main_iPad.storyboard */,
+				AAF42C0B1807FF420069A423 /* Main.storyboard */,
 				AAF42C111807FF430069A423 /* FTViewController.h */,
 				AAF42C121807FF430069A423 /* FTViewController.m */,
 				AAF42C141807FF430069A423 /* Images.xcassets */,
@@ -137,22 +188,46 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AAF42C211807FF440069A423 /* DeviceColorsTests */ = {
+		AAF42C341808117A0069A423 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AAF42C271807FF440069A423 /* DeviceColorsTests.m */,
-				AAF42C221807FF440069A423 /* Supporting Files */,
+				AAF42CC5180812D80069A423 /* com.apple.ipad-2-black.jpg */,
+				AAF42CC6180812D80069A423 /* com.apple.ipad-2-white.jpg */,
+				AAF42CC7180812D80069A423 /* com.apple.ipad-mini-black-3g.jpg */,
+				AAF42CC8180812D80069A423 /* com.apple.ipad-mini-black-wifi.jpg */,
+				AAF42CC9180812D80069A423 /* com.apple.ipad-mini-white-3g.jpg */,
+				AAF42CCA180812D80069A423 /* com.apple.ipad-mini-white-wifi.jpg */,
+				AAF42CCB180812D80069A423 /* com.apple.ipad.jpg */,
+				AAF42CCC180812D80069A423 /* com.apple.iphone-3g.jpg */,
+				AAF42CCD180812D80069A423 /* com.apple.iphone-4-black.jpg */,
+				AAF42CCE180812D80069A423 /* com.apple.iphone-4-cdma-black.jpg */,
+				AAF42CCF180812D80069A423 /* com.apple.iphone-4-cdma-white.jpg */,
+				AAF42CD0180812D80069A423 /* com.apple.iphone-4-white.jpg */,
+				AAF42CD1180812D80069A423 /* com.apple.iphone-5-black.jpg */,
+				AAF42CD2180812D80069A423 /* com.apple.iphone-5-white.jpg */,
+				AAF42CD3180812D80069A423 /* com.apple.iphone-5c-#46abe0.jpg */,
+				AAF42CD4180812D80069A423 /* com.apple.iphone-5c-#a1e877.jpg */,
+				AAF42CD5180812D80069A423 /* com.apple.iphone-5c-#f5f4f7.jpg */,
+				AAF42CD6180812D80069A423 /* com.apple.iphone-5c-#faf189.jpg */,
+				AAF42CD7180812D80069A423 /* com.apple.iphone-5c-#fe767a.jpg */,
+				AAF42CD8180812D80069A423 /* com.apple.iphone-5s-#99989b.jpg */,
+				AAF42CD9180812D80069A423 /* com.apple.iphone-5s-#d4c5b3.jpg */,
+				AAF42CDA180812D80069A423 /* com.apple.iphone-5s-#d7d9d8.jpg */,
+				AAF42CDB180812D80069A423 /* com.apple.iphone.jpg */,
+				AAF42CDC180812D80069A423 /* com.apple.ipod-touch-2.jpg */,
+				AAF42CDD180812D80069A423 /* com.apple.ipod-touch-4-black.jpg */,
+				AAF42CDE180812D80069A423 /* com.apple.ipod-touch-4-white.jpg */,
+				AAF42CDF180812D80069A423 /* com.apple.ipod-touch-5-blue.jpg */,
+				AAF42CE0180812D80069A423 /* com.apple.ipod-touch-5-pink.jpg */,
+				AAF42CE1180812D80069A423 /* com.apple.ipod-touch-5-red.jpg */,
+				AAF42CE2180812D80069A423 /* com.apple.ipod-touch-5-silver.jpg */,
+				AAF42CE3180812D80069A423 /* com.apple.ipod-touch-5-slate.jpg */,
+				AAF42CE4180812D80069A423 /* com.apple.ipod-touch-5-sparrow.jpg */,
+				AAF42CE5180812D80069A423 /* com.apple.ipod-touch-5-white.jpg */,
+				AAF42CE6180812D80069A423 /* com.apple.ipod-touch-5-yellow.jpg */,
+				AAF42CE7180812D80069A423 /* com.apple.ipod-touch.jpg */,
 			);
-			path = DeviceColorsTests;
-			sourceTree = "<group>";
-		};
-		AAF42C221807FF440069A423 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AAF42C231807FF440069A423 /* DeviceColorsTests-Info.plist */,
-				AAF42C241807FF440069A423 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,24 +250,6 @@
 			productReference = AAF42BF61807FF420069A423 /* DeviceColors.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AAF42C191807FF430069A423 /* DeviceColorsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AAF42C2E1807FF440069A423 /* Build configuration list for PBXNativeTarget "DeviceColorsTests" */;
-			buildPhases = (
-				AAF42C161807FF430069A423 /* Sources */,
-				AAF42C171807FF430069A423 /* Frameworks */,
-				AAF42C181807FF430069A423 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AAF42C201807FF440069A423 /* PBXTargetDependency */,
-			);
-			name = DeviceColorsTests;
-			productName = DeviceColorsTests;
-			productReference = AAF42C1A1807FF430069A423 /* DeviceColorsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,11 +259,6 @@
 				CLASSPREFIX = FT;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = FutureTap;
-				TargetAttributes = {
-					AAF42C191807FF430069A423 = {
-						TestTargetID = AAF42BF51807FF420069A423;
-					};
-				};
 			};
 			buildConfigurationList = AAF42BF11807FF420069A423 /* Build configuration list for PBXProject "DeviceColors" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -222,7 +274,6 @@
 			projectRoot = "";
 			targets = (
 				AAF42BF51807FF420069A423 /* DeviceColors */,
-				AAF42C191807FF430069A423 /* DeviceColorsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,18 +283,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAF42C101807FF430069A423 /* Main_iPad.storyboard in Resources */,
+				AAF42CEC180812D80069A423 /* com.apple.ipad-mini-white-3g.jpg in Resources */,
+				AAF42D02180812D80069A423 /* com.apple.ipod-touch-5-blue.jpg in Resources */,
+				AAF42CF4180812D80069A423 /* com.apple.iphone-5-black.jpg in Resources */,
+				AAF42CF7180812D80069A423 /* com.apple.iphone-5c-#a1e877.jpg in Resources */,
 				AAF42C151807FF430069A423 /* Images.xcassets in Resources */,
-				AAF42C0D1807FF420069A423 /* Main_iPhone.storyboard in Resources */,
+				AAF42CED180812D80069A423 /* com.apple.ipad-mini-white-wifi.jpg in Resources */,
+				AAF42CE9180812D80069A423 /* com.apple.ipad-2-white.jpg in Resources */,
+				AAF42D00180812D80069A423 /* com.apple.ipod-touch-4-black.jpg in Resources */,
+				AAF42D01180812D80069A423 /* com.apple.ipod-touch-4-white.jpg in Resources */,
+				AAF42CEE180812D80069A423 /* com.apple.ipad.jpg in Resources */,
+				AAF42D07180812D80069A423 /* com.apple.ipod-touch-5-sparrow.jpg in Resources */,
+				AAF42CEA180812D80069A423 /* com.apple.ipad-mini-black-3g.jpg in Resources */,
+				AAF42CFF180812D80069A423 /* com.apple.ipod-touch-2.jpg in Resources */,
+				AAF42CFE180812D80069A423 /* com.apple.iphone.jpg in Resources */,
+				AAF42D04180812D80069A423 /* com.apple.ipod-touch-5-red.jpg in Resources */,
+				AAF42CFC180812D80069A423 /* com.apple.iphone-5s-#d4c5b3.jpg in Resources */,
+				AAF42CE8180812D80069A423 /* com.apple.ipad-2-black.jpg in Resources */,
+				AAF42CF8180812D80069A423 /* com.apple.iphone-5c-#f5f4f7.jpg in Resources */,
+				AAF42CF2180812D80069A423 /* com.apple.iphone-4-cdma-white.jpg in Resources */,
+				AAF42CF3180812D80069A423 /* com.apple.iphone-4-white.jpg in Resources */,
+				AAF42CEF180812D80069A423 /* com.apple.iphone-3g.jpg in Resources */,
+				AAF42CFA180812D80069A423 /* com.apple.iphone-5c-#fe767a.jpg in Resources */,
+				AAF42D09180812D80069A423 /* com.apple.ipod-touch-5-yellow.jpg in Resources */,
+				AAF42CF5180812D80069A423 /* com.apple.iphone-5-white.jpg in Resources */,
+				AAF42CEB180812D80069A423 /* com.apple.ipad-mini-black-wifi.jpg in Resources */,
+				AAF42CFD180812D80069A423 /* com.apple.iphone-5s-#d7d9d8.jpg in Resources */,
+				AAF42D05180812D80069A423 /* com.apple.ipod-touch-5-silver.jpg in Resources */,
+				AAF42CF9180812D80069A423 /* com.apple.iphone-5c-#faf189.jpg in Resources */,
+				AAF42C0D1807FF420069A423 /* Main.storyboard in Resources */,
+				AAF42CF6180812D80069A423 /* com.apple.iphone-5c-#46abe0.jpg in Resources */,
+				AAF42D06180812D80069A423 /* com.apple.ipod-touch-5-slate.jpg in Resources */,
+				AAF42CF1180812D80069A423 /* com.apple.iphone-4-cdma-black.jpg in Resources */,
+				AAF42D08180812D80069A423 /* com.apple.ipod-touch-5-white.jpg in Resources */,
+				AAF42CF0180812D80069A423 /* com.apple.iphone-4-black.jpg in Resources */,
+				AAF42D03180812D80069A423 /* com.apple.ipod-touch-5-pink.jpg in Resources */,
+				AAF42CFB180812D80069A423 /* com.apple.iphone-5s-#99989b.jpg in Resources */,
 				AAF42C041807FF420069A423 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AAF42C181807FF430069A423 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AAF42C261807FF440069A423 /* InfoPlist.strings in Resources */,
+				AAF42D0A180812D80069A423 /* com.apple.ipod-touch.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,23 +337,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AAF42C161807FF430069A423 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AAF42C281807FF440069A423 /* DeviceColorsTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AAF42C201807FF440069A423 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AAF42BF51807FF420069A423 /* DeviceColors */;
-			targetProxy = AAF42C1F1807FF440069A423 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AAF42C021807FF420069A423 /* InfoPlist.strings */ = {
@@ -287,28 +348,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		AAF42C0B1807FF420069A423 /* Main_iPhone.storyboard */ = {
+		AAF42C0B1807FF420069A423 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AAF42C0C1807FF420069A423 /* Base */,
 			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		AAF42C0E1807FF430069A423 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAF42C0F1807FF430069A423 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		AAF42C241807FF440069A423 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAF42C251807FF440069A423 /* en */,
-			);
-			name = InfoPlist.strings;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -347,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -391,12 +436,15 @@
 		AAF42C2C1807FF440069A423 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DeviceColors/DeviceColors-Prefix.pch";
 				INFOPLIST_FILE = "DeviceColors/DeviceColors-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos6.1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,55 +452,16 @@
 		AAF42C2D1807FF440069A423 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DeviceColors/DeviceColors-Prefix.pch";
 				INFOPLIST_FILE = "DeviceColors/DeviceColors-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos6.1;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		AAF42C2F1807FF440069A423 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DeviceColors.app/DeviceColors";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DeviceColors/DeviceColors-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "DeviceColorsTests/DeviceColorsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		AAF42C301807FF440069A423 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DeviceColors.app/DeviceColors";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DeviceColors/DeviceColors-Prefix.pch";
-				INFOPLIST_FILE = "DeviceColorsTests/DeviceColorsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -475,14 +484,7 @@
 				AAF42C2D1807FF440069A423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		AAF42C2E1807FF440069A423 /* Build configuration list for PBXNativeTarget "DeviceColorsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AAF42C2F1807FF440069A423 /* Debug */,
-				AAF42C301807FF440069A423 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
