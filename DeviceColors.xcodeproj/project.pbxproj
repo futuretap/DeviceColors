@@ -63,6 +63,7 @@
 		AA38E3791808497700FBB325 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AA38E37B18084B8300FBB325 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = "../../../../../../Applications/Xcode-4.6/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MessageUI.framework"; sourceTree = "<group>"; };
 		AA38E37D18084BC600FBB325 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = "../../../../../../Applications/Xcode-4.6/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Social.framework"; sourceTree = "<group>"; };
+		AA38E3AB18086B3800FBB325 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		AAE91ECC18081BE3003E8F81 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		AAF42BF61807FF420069A423 /* DeviceColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF42BF91807FF420069A423 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -141,6 +142,7 @@
 				AAF42BF81807FF420069A423 /* Frameworks */,
 				AAF42BF71807FF420069A423 /* Products */,
 				AA38E3791808497700FBB325 /* LICENSE */,
+				AA38E3AB18086B3800FBB325 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
