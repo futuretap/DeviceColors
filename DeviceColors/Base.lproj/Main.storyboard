@@ -18,30 +18,30 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dFb-e4-hJQ" userLabel="imageView">
-                                <rect key="frame" x="20" y="40" width="280" height="250"/>
+                                <rect key="frame" x="20" y="40" width="280" height="260"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="HTO-mg-zYC"/>
-                                    <constraint firstAttribute="width" priority="500" constant="280" id="n9U-cz-Lkl"/>
+                                    <constraint firstAttribute="height" priority="990" constant="250" id="HTO-mg-zYC"/>
+                                    <constraint firstAttribute="width" priority="500" constant="800" id="n9U-cz-Lkl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="pQ1-RO-7De"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeN-Y8-ieh" userLabel="labelContainerView">
                                 <rect key="frame" x="20" y="300" width="280" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fe8-vU-1NL">
-                                        <rect key="frame" x="5" y="20" width="275" height="21"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fe8-vU-1NL">
+                                        <rect key="frame" x="5" y="11" width="200" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="TdN-Gb-5ob"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DeviceColor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S51-jG-3FD">
-                                        <rect key="frame" x="5" y="100" width="275" height="21"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DeviceColor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S51-jG-3FD">
+                                        <rect key="frame" x="5" y="90" width="275" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -50,8 +50,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DeviceEnclosureColor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wm5-5E-9bH">
-                                        <rect key="frame" x="5" y="135" width="133" height="16"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DeviceEnclosureColor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wm5-5E-9bH">
+                                        <rect key="frame" x="5" y="125" width="133" height="16"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -78,25 +78,39 @@
                                         <dataDetectorType key="dataDetectorTypes"/>
                                     </webView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMr-rG-OEy">
-                                        <rect key="frame" x="5" y="44" width="275" height="21"/>
+                                        <rect key="frame" x="5" y="34" width="275" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="dbJ-YI-bKb"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfO-Uo-7U6">
+                                        <rect key="frame" x="230" y="7" width="50" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137254901963" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Share">
+                                            <color key="titleColor" red="0.0" green="0.47843137254901963" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="share:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rso-Jp-7iN"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="fe8-vU-1NL" firstAttribute="top" secondItem="jeN-Y8-ieh" secondAttribute="top" constant="11" id="1TB-cl-44C"/>
-                                    <constraint firstItem="S51-jG-3FD" firstAttribute="trailing" secondItem="fe8-vU-1NL" secondAttribute="trailing" id="9UF-ci-3NN"/>
+                                    <constraint firstItem="S51-jG-3FD" firstAttribute="trailing" secondItem="fe8-vU-1NL" secondAttribute="trailing" constant="75" id="9UF-ci-3NN"/>
+                                    <constraint firstAttribute="width" constant="280" id="Hrn-Ko-NEs"/>
                                     <constraint firstItem="wm5-5E-9bH" firstAttribute="top" secondItem="S51-jG-3FD" secondAttribute="bottom" constant="14" id="KB2-3c-7s4"/>
                                     <constraint firstItem="S51-jG-3FD" firstAttribute="leading" secondItem="fe8-vU-1NL" secondAttribute="leading" id="KxA-oT-DFr"/>
                                     <constraint firstItem="akk-ue-6cF" firstAttribute="top" secondItem="O7X-sW-IuP" secondAttribute="bottom" constant="2" id="LNC-gp-xXD"/>
                                     <constraint firstAttribute="trailing" secondItem="O7X-sW-IuP" secondAttribute="trailing" id="OhV-gw-vYx"/>
-                                    <constraint firstItem="S51-jG-3FD" firstAttribute="top" secondItem="fe8-vU-1NL" secondAttribute="bottom" constant="59" id="YWx-BK-uuw"/>
+                                    <constraint firstAttribute="trailing" secondItem="lfO-Uo-7U6" secondAttribute="trailing" id="XWt-aE-ve0"/>
+                                    <constraint firstItem="S51-jG-3FD" firstAttribute="top" secondItem="fe8-vU-1NL" secondAttribute="bottom" constant="58" id="YWx-BK-uuw"/>
                                     <constraint firstItem="fe8-vU-1NL" firstAttribute="leading" secondItem="jeN-Y8-ieh" secondAttribute="leading" constant="5" id="ZxY-CY-TVJ"/>
                                     <constraint firstItem="akk-ue-6cF" firstAttribute="trailing" secondItem="O7X-sW-IuP" secondAttribute="trailing" id="dma-Ho-ypR"/>
                                     <constraint firstItem="wm5-5E-9bH" firstAttribute="trailing" secondItem="S51-jG-3FD" secondAttribute="trailing" constant="-142" id="f4F-Lr-mtt"/>
@@ -109,10 +123,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dFb-e4-hJQ" secondAttribute="trailing" constant="20" id="39J-Kw-PX7"/>
                             <constraint firstAttribute="bottom" secondItem="jeN-Y8-ieh" secondAttribute="bottom" constant="20" id="SbW-SE-ReQ"/>
+                            <constraint firstItem="ohS-ra-ab1" firstAttribute="top" secondItem="dFb-e4-hJQ" secondAttribute="bottom" constant="180" id="YSf-hz-oHc"/>
                             <constraint firstItem="dFb-e4-hJQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="bHF-TQ-ypf"/>
-                            <constraint firstItem="jeN-Y8-ieh" firstAttribute="width" secondItem="dFb-e4-hJQ" secondAttribute="width" id="jdr-rf-sUw"/>
-                            <constraint firstAttribute="trailing" secondItem="jeN-Y8-ieh" secondAttribute="trailing" constant="20" id="oHn-Le-sBy"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jeN-Y8-ieh" secondAttribute="trailing" constant="20" id="oHn-Le-sBy"/>
                             <constraint firstItem="jeN-Y8-ieh" firstAttribute="leading" secondItem="dFb-e4-hJQ" secondAttribute="trailing" constant="-280" id="viY-Ph-Me1"/>
                             <constraint firstItem="dFb-e4-hJQ" firstAttribute="top" secondItem="jWO-wh-hbY" secondAttribute="bottom" constant="20" id="vyx-YU-mtn"/>
                         </constraints>
@@ -123,6 +138,7 @@
                         <outlet property="deviceColorWebView" destination="O7X-sW-IuP" id="yP4-g8-wpu"/>
                         <outlet property="deviceEnclosureColorWebView" destination="akk-ue-6cF" id="7cq-OQ-IM3"/>
                         <outlet property="horizontalSpaceConstraint" destination="viY-Ph-Me1" id="af1-1a-bb3"/>
+                        <outlet property="imageBottomConstraint" destination="YSf-hz-oHc" id="lCD-QS-HFU"/>
                         <outlet property="imageView" destination="dFb-e4-hJQ" id="pmX-LW-cL9"/>
                         <outlet property="labelContainerView" destination="jeN-Y8-ieh" id="wAd-gP-BCB"/>
                         <outlet property="modelLabel" destination="LMr-rG-OEy" id="ex2-wu-vQc"/>

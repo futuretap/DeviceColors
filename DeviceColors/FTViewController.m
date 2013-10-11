@@ -8,10 +8,12 @@
 
 #import "FTViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import <Social/Social.h>
 #include <sys/utsname.h>
 
 @interface FTViewController ()
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *horizontalSpaceConstraint;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *imageBottomConstraint;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) IBOutlet UIView *labelContainerView;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
@@ -20,6 +22,8 @@
 @property (strong, nonatomic) IBOutlet UIWebView *deviceColorWebView;
 @property (strong, nonatomic) IBOutlet UIWebView *deviceEnclosureColorWebView;
 
+@property (strong, nonatomic) NSString *deviceColor;
+@property (strong, nonatomic) NSString *deviceEnclosureColor;
 @end
 
 @implementation FTViewController
@@ -27,10 +31,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-	self.horizontalSpaceConstraint.constant = UIInterfaceOrientationIsPortrait(self.interfaceOrientation) ? 40 -self.view.frame.size.width : 20;
 
-
+	[self willAnimateRotationToInterfaceOrientation:self.interfaceOrientation duration:0];
 	
 	self.deviceColorWebView.scrollView.scrollEnabled = NO;
 	self.deviceColorWebView.layer.borderColor = [UIColor grayColor].CGColor;
@@ -45,9 +47,9 @@
 	NSString *modelName = @"";
 	
 	SEL selector = NSSelectorFromString([device.systemVersion hasPrefix:@"7"] ? @"_deviceInfoForKey:" :  @"deviceInfoForKey:");
-	NSString *deviceColor = [device performSelector:selector withObject:@"DeviceColor"];
-	NSString *deviceEnclosureColor = [device performSelector:selector withObject:@"DeviceEnclosureColor"];
-	NSString *color = deviceEnclosureColor && ![deviceEnclosureColor isEqualToString:@"unknown"] ? deviceEnclosureColor : deviceColor;
+	self.deviceColor = [device performSelector:selector withObject:@"DeviceColor"];
+	self.deviceEnclosureColor = [device performSelector:selector withObject:@"DeviceEnclosureColor"];
+	NSString *color = self.deviceEnclosureColor && ![self.deviceEnclosureColor isEqualToString:@"unknown"] ? self.deviceEnclosureColor : self.deviceColor;
 	color = [color stringByReplacingOccurrencesOfString:@"#" withString:@""];
 	
 	NSArray *models = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"]][@"UTExportedTypeDeclarations"];
@@ -70,15 +72,21 @@
 	NSString *fontName = self.deviceColorLabel.font.fontName;
 	
 	NSArray *darkColors = @[@"black", @"#3b3b3c", @"#99989b"];
-	NSString *deviceForegroundColor = [darkColors containsObject:deviceColor] ? @"white" : @"black";
-	NSString *deviceColorHTML = [NSString stringWithFormat:htmlStringFormat, fontName, deviceColor, deviceForegroundColor, deviceColor];
+	NSString *deviceForegroundColor = [darkColors containsObject:self.deviceColor] ? @"white" : @"black";
+	NSString *deviceColorHTML = [NSString stringWithFormat:htmlStringFormat, fontName, self.deviceColor, deviceForegroundColor, self.deviceColor];
 	
-	NSString *deviceEnclosureForegroundColor = [darkColors containsObject:deviceEnclosureColor] ? @"white" : @"black";
-	NSString *deviceEnclosureColorHTML = [NSString stringWithFormat:htmlStringFormat, fontName, deviceEnclosureColor, deviceEnclosureForegroundColor, deviceEnclosureColor];
+	NSString *deviceEnclosureForegroundColor = [darkColors containsObject:self.deviceEnclosureColor] ? @"white" : @"black";
+	NSString *deviceEnclosureColorHTML = [NSString stringWithFormat:htmlStringFormat, fontName, self.deviceEnclosureColor, deviceEnclosureForegroundColor, self.deviceEnclosureColor];
 	
 	[self.deviceColorWebView loadHTMLString:deviceColorHTML baseURL:nil];
 	[self.deviceEnclosureColorWebView loadHTMLString:deviceEnclosureColorHTML baseURL:nil];
-	
+}
+
+- (IBAction)share:(id)sender {
+	NSArray *activityItems = @[[NSString stringWithFormat:@"DeviceColor Report\n\n%@ (%@)\nDeviceColor: %@\nDeviceEnclosureColor: %@\n", self.nameLabel.text, self.modelLabel.text, self.deviceColor, self.deviceEnclosureColor],
+							   [NSURL URLWithString:@"https://github.com/futuretap/DeviceColors"]];
+	UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+	[self presentViewController:activityViewController animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,6 +97,7 @@
 
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
 	self.horizontalSpaceConstraint.constant = UIInterfaceOrientationIsPortrait(toInterfaceOrientation) ? 40 -self.view.frame.size.width : 20;
+	self.imageBottomConstraint.constant = UIInterfaceOrientationIsPortrait(toInterfaceOrientation) ? self.labelContainerView.frame.size.height + 40 : 20;
 }
 
 - (NSString*)hardwareModel {
