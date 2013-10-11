@@ -63,20 +63,6 @@
 		AA38E3791808497700FBB325 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AA38E37B18084B8300FBB325 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = "../../../../../../Applications/Xcode-4.6/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/MessageUI.framework"; sourceTree = "<group>"; };
 		AA38E37D18084BC600FBB325 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = "../../../../../../Applications/Xcode-4.6/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Social.framework"; sourceTree = "<group>"; };
-		AA38E381180853E500FBB325 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = SOURCE_ROOT; };
-		AA38E382180853E500FBB325 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = SOURCE_ROOT; };
-		AA38E383180853E500FBB325 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = SOURCE_ROOT; };
-		AA38E384180853E500FBB325 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = SOURCE_ROOT; };
-		AA38E385180853E500FBB325 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = SOURCE_ROOT; };
-		AA38E386180853E500FBB325 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = SOURCE_ROOT; };
-		AA38E387180853E500FBB325 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = SOURCE_ROOT; };
-		AA38E388180853E500FBB325 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = SOURCE_ROOT; };
-		AA38E389180853E500FBB325 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = SOURCE_ROOT; };
-		AA38E38A180853E500FBB325 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = SOURCE_ROOT; };
-		AA38E38B180853E500FBB325 /* Icon-Spotlight-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-40.png"; sourceTree = SOURCE_ROOT; };
-		AA38E38C180853E500FBB325 /* Icon-Spotlight-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-40@2x.png"; sourceTree = SOURCE_ROOT; };
-		AA38E38D180853E500FBB325 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
-		AA38E38E180853E500FBB325 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		AAE91ECC18081BE3003E8F81 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		AAF42BF61807FF420069A423 /* DeviceColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF42BF91807FF420069A423 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -192,20 +178,6 @@
 				AAF42C111807FF430069A423 /* FTViewController.h */,
 				AAF42C121807FF430069A423 /* FTViewController.m */,
 				AAF42C141807FF430069A423 /* Images.xcassets */,
-				AA38E381180853E500FBB325 /* Icon-60.png */,
-				AA38E382180853E500FBB325 /* Icon-60@2x.png */,
-				AA38E383180853E500FBB325 /* Icon-72.png */,
-				AA38E384180853E500FBB325 /* Icon-72@2x.png */,
-				AA38E385180853E500FBB325 /* Icon-76.png */,
-				AA38E386180853E500FBB325 /* Icon-76@2x.png */,
-				AA38E387180853E500FBB325 /* Icon-Small-50.png */,
-				AA38E388180853E500FBB325 /* Icon-Small-50@2x.png */,
-				AA38E389180853E500FBB325 /* Icon-Small.png */,
-				AA38E38A180853E500FBB325 /* Icon-Small@2x.png */,
-				AA38E38B180853E500FBB325 /* Icon-Spotlight-40.png */,
-				AA38E38C180853E500FBB325 /* Icon-Spotlight-40@2x.png */,
-				AA38E38D180853E500FBB325 /* Icon.png */,
-				AA38E38E180853E500FBB325 /* Icon@2x.png */,
 				AAF42C001807FF420069A423 /* Supporting Files */,
 			);
 			path = DeviceColors;
