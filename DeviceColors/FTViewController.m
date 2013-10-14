@@ -62,7 +62,10 @@
 	NSString *modelCode = [self hardwareModel];
 	NSString *modelName = @"";
 	
-	SEL selector = NSSelectorFromString([device.systemVersion hasPrefix:@"7"] ? @"_deviceInfoForKey:" :  @"deviceInfoForKey:");
+	SEL selector = NSSelectorFromString(@"deviceInfoForKey:");
+	if (![device respondsToSelector:selector]) {
+		selector = NSSelectorFromString(@"_deviceInfoForKey:");
+	}
 	
 	if ([device respondsToSelector:selector]) {
 		// private API! Do not use in App Store builds!
